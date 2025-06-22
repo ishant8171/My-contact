@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="heading">Ishant Hatwal</h1>
+
+    <div class="inputBox">
+      <p class="label">Login Here:</p>
+      <input id="username" type="text" placeholder="Enter Username" />
+      <input id="password" type="password" placeholder="Enter Password" />
+    </div>
+
+    <div class="buttonContainer">
+      <button onclick="checkDetails()">Log In</button>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="note">
+      <p class="paraNote">
+        1. Username should only contain alphabets (without spaces, numbers, or special characters). <br><br>
+        2. Password should be 'Username' + '@123' (without spaces). <br><br>
+        3. Username: 'Ishant', Password: 'Ishant @123' is wrong. <br><br>
+        4. Username: 'Ishant', Password: 'ishant@123' is wrong. <br><br>
+        5. Username: 'Ishant', Password: 'Ishant@123' is right.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

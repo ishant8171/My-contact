@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:first-child {
+  background-color: #3498db;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #2980b9;
+}
+
+button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #c0392b;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 25px 0;
+}
+
+/* Note Section */
+.note {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #3498db;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  text-align: left;
+  line-height: 1.6;
+}
